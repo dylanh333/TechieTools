@@ -27,9 +27,9 @@ SOFTWARE.
 
 .TAGS Network Ping ICMP Diagnostics Troubleshooting
 
-.LICENSEURI https://opensource.org/licenses/MIT
+.LICENSEURI https://github.com/dylanh333/TechieTools/blob/master/LICENSE
 
-.PROJECTURI 
+.PROJECTURI https://github.com/dylanh333/TechieTools
 
 .RELEASENOTES
 1.0 Initial release.
