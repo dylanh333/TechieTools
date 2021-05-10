@@ -23,7 +23,7 @@
 
 .DESCRIPTION 
  Pings multiple hosts simultaneously via ICMP, and outputs their resulting round-trip times (RTT) in tabular form.
-By default, each row of output is an object with the timestamp and the most recent RTTs - for each host being pinged - as its properties (columns). Additional properties such as minimum, maximum, and average RTTs  for each host can be enabled using the parameters described below.
+By default, each row of output is an object with the timestamp and the most recent RTTs - for each host being pinged - as its properties (columns). Additional properties such as minimum, maximum, and average RTTs for each host can be enabled using the parameters described below.
 
 .PARAMETER Hosts
  An array of hostnames or IP addresses to ping.
