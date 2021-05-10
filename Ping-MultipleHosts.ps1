@@ -23,7 +23,7 @@
 
 .DESCRIPTION 
  Pings multiple hosts simultaneously via ICMP, and outputs their resulting round-trip times (RTT) in tabular form.
-By default, each row of output is an object with the timestamp and a column (property) most recent RTT for each host being pinged. Additional properties such as minimum, maximum, and average RTTs can be enabled as detailed below.
+By default, each row of output is an object with the timestamp and the most recent RTTs - for each host being pinged - as its properties (columns). Additional properties such as minimum, maximum, and average RTTs  for each host can be enabled using the parameters described below.
 
 .PARAMETER Hosts
  An array of hostnames or IP addresses to ping.
@@ -94,6 +94,25 @@ If the host's name is "host.com", then the resulting column for this is named "h
 .EXAMPLE
  ./Ping-MultipleHosts.ps1 -Hosts 'google.com','10.0.0.1','192.168.0.1' -OutputAll | Export-Csv -NoTypeInformation 'ping.csv'
  # Includes all additional columns described above, and saves the resulting ping times to a CSV
+
+.NOTES
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 #> 
 
